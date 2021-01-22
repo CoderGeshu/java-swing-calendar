@@ -3,7 +3,7 @@
 
 运行如下：
 
-![image-20210122221401610](https://gitee.com/eric0228/pic-go-images/raw/master/img/image-20210122221401610.png)
+![运行结果](https://gitee.com/eric0228/pic-go-images/raw/master/img/运行结果.JPG)
 
 支持上下月翻页，支持查询指定年月的日历，支持一键返回当前日期。
 
