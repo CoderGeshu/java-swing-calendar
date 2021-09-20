@@ -3,7 +3,7 @@
 
 运行如下：
 
-![运行结果](https://gitee.com/eric0228/pic-go-images/raw/master/img/运行结果.JPG)
+![运行结果](https://gitee.com/CoderGeshu/pic-go-images/raw/master/img/运行结果.JPG)
 
 它支持显示当前日期，并使用红色高亮标注。
 
