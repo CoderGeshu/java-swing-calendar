@@ -8,10 +8,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * @Date: 2020/3/10 15:31
@@ -194,6 +192,7 @@ public class MyCalendarUI extends JFrame implements ActionListener {
         });
 
         //添加至主窗口
+        this.setBackground(new Color(202, 199, 198));
         this.add(jp_top, BorderLayout.NORTH);
         this.add(jp_display, BorderLayout.CENTER);
         this.add(btn_lastMonth, BorderLayout.WEST);
@@ -221,15 +220,15 @@ public class MyCalendarUI extends JFrame implements ActionListener {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, year);
         cal.set(Calendar.MONTH, month);
-        System.out.println("当前选择的是：" + year + "年" + (month + 1) + "月");
+//        System.out.println("当前选择的是：" + year + "年" + (month + 1) + "月");
         //获得这一月有多少天
         int daysOfMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
-        System.out.println("这月一共有" + daysOfMonth + "天");
+//        System.out.println("这月一共有" + daysOfMonth + "天");
         //得到每月第一天是一周中的第几天，从周日开始计算
         //如：firstDay=0，表示周日；firstDay=1则表示周一，以此类推
         cal.set(Calendar.DAY_OF_MONTH, 1);
         int firstWeekOfMonth = cal.get(Calendar.DAY_OF_WEEK) - 1;
-        System.out.println("这月第一天为周 " + firstWeekOfMonth);
+//        System.out.println("这月第一天为周 " + firstWeekOfMonth);
         //为这月的每一天的标签赋值
         for (int i = 0; i < daysOfMonth; ++i) {
             labels[7 + firstWeekOfMonth + i].setText(i + 1 + "");
@@ -245,7 +244,7 @@ public class MyCalendarUI extends JFrame implements ActionListener {
         cmb_month.setSelectedItem(calendar.get(Calendar.MONTH) + 1);
         int firstWeekOfMonth = showCalendar(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH));
         int today = calendar.get(Calendar.DAY_OF_MONTH);
-        System.out.println("今天是" + today + "号");
+//        System.out.println("今天是" + today + "号");
         labels[7 + firstWeekOfMonth + today - 1].setForeground(Color.red);
     }
 
@@ -261,8 +260,4 @@ public class MyCalendarUI extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        new MyCalendarUI("MyCalendar");
-        updateBeijingTime();
-    }
 }

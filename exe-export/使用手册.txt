@@ -1,0 +1,3 @@
+点击 MyCalendar.exe 文件即可运行日历程序，
+
+picture 文件夹存放背景图，可自行更换背景图片：只需将图片命名为 background.png，然后替换掉 picture 文件夹下的图片即可。
