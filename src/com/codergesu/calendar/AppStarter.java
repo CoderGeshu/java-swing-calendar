@@ -1,4 +1,4 @@
-package mycalendar;
+package com.codergesu.calendar;
 
 /**
  * @Date: 2021/9/20 21:51
@@ -6,7 +6,7 @@ package mycalendar;
  */
 public class AppStarter {
     public static void main(String[] args) {
-        new MyCalendarUI("CoderGeshu-Calendar");
-        MyCalendarUI.updateBeijingTime();
+        new CalendarUI("CoderGeshu-Calendar");
+        CalendarUI.updateBeijingTime();
     }
 }

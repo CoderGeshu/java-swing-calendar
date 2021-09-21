@@ -1,4 +1,4 @@
-package mycalendar;
+package com.codergesu.calendar;
 
 import javax.swing.*;
 import java.awt.*;

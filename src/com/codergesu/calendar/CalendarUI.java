@@ -1,4 +1,4 @@
-package mycalendar;
+package com.codergesu.calendar;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -15,7 +15,7 @@ import java.util.Timer;
  * @Date: 2020/3/10 15:31
  * @author: Eric
  */
-public class MyCalendarUI extends JFrame implements ActionListener {
+public class CalendarUI extends JFrame implements ActionListener {
     private static JLabel lbl_BeijingTime;
     private JComboBox<Integer> cmb_year;
     private JComboBox<Integer> cmb_month;
@@ -26,7 +26,7 @@ public class MyCalendarUI extends JFrame implements ActionListener {
 
     private Calendar calendar = Calendar.getInstance();
 
-    public MyCalendarUI(String title) {
+    public CalendarUI(String title) {
         super(title);
         ImageIcon picture = new ImageIcon("picture/background.png");
         Background.setBackgroundPicture(this, picture);
